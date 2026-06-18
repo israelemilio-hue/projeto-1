@@ -20,10 +20,19 @@ body{
     height: 200px;
 }
  .cartao img{
-    width: 80%;
+    width: 100%;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+}
+.cartao-interno{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.cartao:hover .cartao-interno{
+    transform: rotateY(180deg);
+}
